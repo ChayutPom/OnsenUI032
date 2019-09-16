@@ -44,8 +44,15 @@ document.addEventListener('init', function (event) {
         $("#btn1").click(function () {
             ons.notification.alert("Hello");
         });
-    }
 
+      
+                
+            
+       
+    }
+    $("#category").click(function () {
+        content.load('food.html')
+     });
   
 
         $("#bbb").click(function () {

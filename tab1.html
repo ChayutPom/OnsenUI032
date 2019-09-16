@@ -1,27 +1,73 @@
-<ons-page>  
-   
-  <ons-navigator var="myNavigator" ng-controller="MasterController"
+<ons-page id="tab1">  <br>
+    <ons-navigator var="myNavigator" ng-controller="MasterController"
     style="display:flex;background:url(img/background1.jpg) no-repeat center; background-size: cover;">  
        
     
-  <ons-carousel  swipeable autoScroll  overscrollable id="carousel">
-          <ons-carousel-item >
-            <div >
-                    <ons-card><img src="img/promotion1.jpg" alt="Onsen UI" style="width: 100%"></ons-card>
-            </div>
-          </ons-carousel-item>
-          <ons-carousel-item >
-            <div >
-                    <ons-card><img src="img/promotion2.jpg" alt="Onsen UI" style="width: 100%"></ons-card>
-            </div>
-          </ons-carousel-item>
-          <ons-carousel-item >
-            <div >
-                    <ons-card><img src="img/promotion3.jpg" alt="Onsen UI" style="width: 100%"></ons-card>
-            </div>
-          </ons-carousel-item>
-
+    <div id="category" style="margin-top: 50px" >
+        <ons-row style="height:120px" vertical-align="center">  
           
-        </ons-carousel>
- 
+        <ons-col style="background: rgb(250, 128, 114); border: 1px solid white; color: black; flex: 0 0 33%; max-width: 33%;" width="50%" onclick="changeTab('Cosmetic')">
+    <p style="text-align: center; margin: 10px;">
+        <img src="img/FastFood.jpg" alt="Onsen UI" style="width: 50%">
+          </p>
+          <p style="text-align: center; margin: 10px;" id="icon1_text">
+            
+            FastFood
+          </p>
+        </ons-col>
+          
+        <ons-col style="background: rgb(63, 176, 48); border: 1px solid white; color: black; flex: 0 0 33%; max-width: 33%;" width="50%" onclick="changeTab('Sports')">
+    <p style="text-align: center; margin: 10px;">
+        <img src="img/Vegeterian.jpg" alt="Onsen UI" style="width: 44%">
+          </p>
+          <p style="text-align: center; margin: 10px;" id="icon1_text">
+            
+            Vegeterian
+          </p>
+        </ons-col>
+         
+        <ons-col style="background: rgb(211, 85, 169); border: 1px solid white; color: black; flex: 0 0 33%; max-width: 33%;" width="50%" onclick="changeTab('Computer')">
+    <p style="text-align: center; margin: 10px;">
+        <img src="img/kebab.jpg" alt="Onsen UI" style="width: 52%">
+          </p>
+          <p style="text-align: center; margin: 10px;" id="icon1_text">
+            
+            Kebabs
+          </p>
+        </ons-col>
+          
+        <ons-col style="background: rgb(247, 13, 13); border: 1px solid white; color: black; flex: 0 0 33%; max-width: 33%;" width="50%" onclick="changeTab('Camera')">
+    <p style="text-align: center; margin: 10px;">
+        <img src="img/chainese.jpg" alt="Onsen UI" style="width: 56%">
+          </p>
+          <p style="text-align: center; margin: 10px;" id="icon1_text">
+            
+            Chinese
+          </p>
+        </ons-col>
+          
+        <ons-col style="background: rgb(201, 212, 46); border: 1px solid white; color: black; flex: 0 0 33%; max-width: 33%;" width="50%" onclick="changeTab('Furniture')">
+    <p style="text-align: center; margin: 10px;">
+        <img src="img/Pizza.jpg" alt="Onsen UI" style="width: 50%">
+          </p>
+          <p style="text-align: center; margin: 10px;" id="icon1_text">
+            
+            Pizza
+          </p>
+        </ons-col>
+          
+        <ons-col style="background: rgb(119, 112, 218); border: 1px solid white; color: black; flex: 0 0 33%; max-width: 33%;" width="50%" onclick="changeTab('Smartphone')">
+    <p style="text-align: center; margin: 10px;">
+        <img src="img/Thai.png" alt="Onsen UI" style="width: 55%">
+          </p>
+          <p style="text-align: center; margin: 10px;" id="icon1_text">
+            
+            Thai
+          </p>
+        </ons-col>
+          
+    
+        
+        </ons-row>
+        </div>
       </ons-page>
