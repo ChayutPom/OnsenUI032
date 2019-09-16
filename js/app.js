@@ -50,9 +50,7 @@ document.addEventListener('init', function (event) {
             
        
     }
-    $("#category").click(function () {
-        content.load('food.html')
-     });
+   
   
 
         $("#bbb").click(function () {
